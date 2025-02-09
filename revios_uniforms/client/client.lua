@@ -9,8 +9,6 @@ AddEventHandler('revios_uniforms:useItem', function(outfitName, outfitTable, isI
 
 	print("outfitTable: \n" .. ESX.DumpTable(outfitTable))
 
-	-- TODO: Check if player in a Outfit already
-
 	if isInUniform then
 		if Config.DEBUG then
 			print("Player is in a Uniform already")
@@ -54,31 +52,3 @@ AddEventHandler('revios_uniforms:useItem', function(outfitName, outfitTable, isI
 		end)
 	end
 end)
-
-
---[[
-  RegisterNetEvent('revios_uniform:puton')
-  	AddEventHandler('revios_uniform:puton', function(color)
-  		-- if
-   		?UseItem?
-  		then
-  			TriggerEvent('skinchanger:getSkin', function(skin)
-  				if skin.sex == 0 then
-  					local x =   ?ITEMNAME?  
-  					local clothesSkin = Config.Outfits[x].male
-  					TriggerEvent('skinchanger:loadClothes')
-  				else
-  					local x =   ?ITEMNAME?  
-  					local clothesSkin = Config.Outfits[x].female
-  					TriggerEvent('skinchanger:loadClothes')
-  				end
-  		end)
-
-  		if
---   		?REUSEITEM?   Alternativ: WENN SPIELER ITEMSKIN HAT,DANN TRIGGER CLiEv PUTOFF
-  		then
-  			TriggerEvent (
-   				'LADE-SKIN-AUS-DATENBANK'
-  		)
-  		end)
-]]
