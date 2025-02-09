@@ -69,18 +69,6 @@ ESX.RegisterServerCallback("revios_uniforms:getActiveSkin"
 	end
 end)
 
-
-
---[[
-	revios_uniforms:getActiveSkinData
-
-	Search is any outfit is active in the database
-
-	if not then save the current skin
-	if yes then load the oldOutfit and the current skin
-
-]]
-
 ESX.RegisterServerCallback('revios_uniforms:saveOutfitSkin', function(source, cb, uniformName)
 	if Config.DEBUG then
 		print("uniformName: " .. uniformName)
